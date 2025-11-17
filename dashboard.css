@@ -204,14 +204,13 @@ header {
 .rainbow-title {
     font-family: 'Rubik', sans-serif;
     font-weight: 900;
-    font-size: 2.2rem; /* Size kam karo */
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Dynamic font size */
     text-align: center;
     margin: 0;
     padding: 0;
     width: 100%;
-    white-space: nowrap; /* Ye line important hai */
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .rainbow-text {
@@ -226,13 +225,10 @@ header {
     -webkit-text-fill-color: transparent;
     animation: rainbowFlow 2s linear infinite;
     display: inline-block;
-    text-shadow: 
-        0 2px 4px rgba(0, 0, 0, 0.1),
-        0 4px 8px rgba(0, 0, 0, 0.05);
-    letter-spacing: 1px; /* Letter spacing kam karo */
+    letter-spacing: 0.5px;
     line-height: 1;
-    padding: 8px 15px;
-    white-space: nowrap; /* Ye bhi add karo */
+    padding: 5px 10px;
+    white-space: nowrap;
 }
 
 @keyframes rainbowFlow {
@@ -1671,4 +1667,5 @@ footer {
     }
 
 }
+
 
