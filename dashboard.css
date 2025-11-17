@@ -200,6 +200,7 @@ header {
 }
 
 /* Clean Rainbow Style Title */
+/* Header Text ko 1 line me lane ke liye */
 .rainbow-title {
     font-family: 'Rubik', sans-serif;
     font-weight: 900;
@@ -216,14 +217,8 @@ header {
 .rainbow-text {
     background: linear-gradient(
         90deg,
-        #9400D3, /* Violet */
-        #4B0082, /* Indigo */
-        #0000FF, /* Blue */
-        #00FF00, /* Green */
-        #FFFF00, /* Yellow */
-        #FF7F00, /* Orange */
-        #FF0000, /* Red */
-        #9400D3  /* Violet again for smooth loop */
+        #9400D3, #4B0082, #0000FF, #00FF00,
+        #FFFF00, #FF7F00, #FF0000, #9400D3
     );
     background-size: 700% 100%;
     -webkit-background-clip: text;
@@ -234,9 +229,10 @@ header {
     text-shadow: 
         0 2px 4px rgba(0, 0, 0, 0.1),
         0 4px 8px rgba(0, 0, 0, 0.05);
-    letter-spacing: 3px;
-    line-height: 1.2;
-    padding: 10px 20px;
+    letter-spacing: 1px; /* Letter spacing kam karo */
+    line-height: 1;
+    padding: 8px 15px;
+    white-space: nowrap; /* Ye bhi add karo */
 }
 
 @keyframes rainbowFlow {
