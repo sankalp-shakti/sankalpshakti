@@ -203,11 +203,14 @@ header {
 .rainbow-title {
     font-family: 'Rubik', sans-serif;
     font-weight: 900;
-    font-size: 3.2rem;
+    font-size: 2.2rem; /* Size kam karo */
     text-align: center;
     margin: 0;
     padding: 0;
     width: 100%;
+    white-space: nowrap; /* Ye line important hai */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .rainbow-text {
@@ -1670,4 +1673,5 @@ footer {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+
 }
